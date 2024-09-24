@@ -1,0 +1,115 @@
+/* Global styles */
+html {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+body {
+    background-color: rgb(17, 16, 16);
+    color: rgb(233, 228, 228);
+}
+
+/* Header styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 9.375rem;
+    z-index: 1000;
+    border-bottom: 2px solid white;
+    box-sizing: border-bottom;
+    background-color: rgb(44, 44, 44);
+    flex-direction: column;
+}
+
+.header-title {
+    text-align: center;
+    font-family: "MS Gothic";
+    color: rgb(231, 212, 42);
+    margin: 0;
+    padding-top: 1rem;
+}
+
+.header-subtitle {
+    text-align: center;
+    margin: 0;
+    font-family: monospace;
+    padding: 5px 0;
+    color: rgb(46, 226, 46);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding-bottom: 1.5rem;
+}
+
+header nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: monospace;
+    margin: 0 15px;
+    color: rgb(230, 150, 31);
+}
+
+/* Main styles */
+main {
+    padding-top: 9rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 57.625rem;
+}
+
+.intro {
+    border-bottom: 2px solid white;
+}
+
+.intro h2 {
+    color: rgb(86, 181, 245);
+}
+
+.sample-transliterations {
+    border-bottom: 2px solid white;
+}
+
+/* Footer styles */
+footer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Media queries */
+@media (max-width: 613px) {
+    .header-subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 581px) {
+    nav {
+        flex-direction: column;
+    }
+
+    header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 534px) {
+    .header-title {
+        font-size: 1.8rem;
+    }
+    
+    .header-subtitle {
+        font-size: 0.9rem;
+    }
+
+    header {
+        text-align: center;
+    }
+}
